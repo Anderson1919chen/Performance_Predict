@@ -2,7 +2,9 @@ import numpy as np
 import model
 
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 app = Flask(__name__) #建立Application 物件
+CORS(app)
 
 #建立首頁回應方式
 @app.route("/")
